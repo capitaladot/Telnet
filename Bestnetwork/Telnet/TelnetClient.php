@@ -101,7 +101,7 @@ class TelnetClient {
         }
 
         // attempt connection
-        $this->socket = @fsockopen($this->host, $this->port, $this->errno, $this->errstr, $this->timeout);
+        $this->socket = @pfsockopen($this->host, $this->port, $this->errno, $this->errstr, $this->timeout);
 
         if( !$this->socket ){
             throw new TelnetException('Cannot connect to ' . $this->host . ' on port ' . $this->port);
