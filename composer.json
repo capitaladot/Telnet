@@ -1,5 +1,5 @@
 {
-    "name": "bestnetwork/telnet",
+    "name": "capitaladot/telnet",
     "description": "Telnet client in php",
     "keywords": ["telnet", "client"],
     "license": "MIT",
